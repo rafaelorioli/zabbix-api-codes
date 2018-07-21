@@ -4,7 +4,9 @@ zapi = ZabbixAPI(server="http://localhost/zabbix")
 zapi.login("admin","zabbix")
 
 read = zapi.host.isreadable([
-	10254
+	10254,
+	10266,
+	10443
 ])
 
 if read:
