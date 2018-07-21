@@ -1,14 +1,14 @@
-from zabbix_api import ZabbixAPI
-
-zapi = ZabbixAPI(server="http://localhost/zabbix")
-zapi.login("admin","zabbix")
-
 '''
 Cira um host chamado servidor linux, adiciona ao grupo linux servers,
 o id do grupo e 2, associado ao template OS Linux, cujo o id e o 10001
 O host ja entra habilitado, caso nao queria habilitar, mude o status para 1
 
 '''
+
+from zabbix_api import ZabbixAPI
+
+zapi = ZabbixAPI(server="http://localhost/zabbix")
+zapi.login("admin","zabbix")
 
 host = zapi.host.create({
 	"host": "Servidor linux",
