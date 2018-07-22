@@ -1,7 +1,7 @@
 # zabbix-api-codes
 Examples codes - Zabbix API
 
-### Environment.
+### Environment
 ```
 Linux distro: CentOS 7
 Kernel: 4.14
