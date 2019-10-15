@@ -18,6 +18,7 @@ interfaces = zapi.hostinterface.get({
 	]
 })
 
+#For para percorrer host para verificar id
 for host in hosts:
 	for interface in interfaces:
 		if interface["hostid"] == host["hostid"]:

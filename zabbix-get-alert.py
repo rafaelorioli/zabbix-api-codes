@@ -18,4 +18,5 @@ alerts = zapi.alert.get({
 	"countOutput": "True",
 })
 
+echo "Executou print"
 print("Numero de vezes que a acao foi disparada {0}".format(alerts))

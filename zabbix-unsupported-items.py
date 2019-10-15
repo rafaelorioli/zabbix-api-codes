@@ -13,6 +13,7 @@ print("===============================================")
 print("ID Host	-	ID Item 	-	Nome 	- 	Erro")
 print("===============================================")
 
+#For para Itens id e erro 
 for item in itens:
 	print(item["hostid"], item["itemid"], item["name"], item["error"])
 
